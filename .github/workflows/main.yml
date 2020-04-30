@@ -19,6 +19,7 @@ jobs:
           mkdir build
           cp -r assets build/
           cp index.html build/
+          cp CNAME build/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
