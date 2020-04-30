@@ -19,10 +19,19 @@ const style = () => {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .on('error', sass.logError)
-        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(browserSync.stream());
+};
+
+const styleProd = () => {
+    return gulp
+        .src(paths.styles.src)
+        .pipe(sass())
+        .on('error', sass.logError)
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(gulp.dest(paths.styles.dest));
 };
 
 const reload = () => {
@@ -42,7 +51,7 @@ const watch = () => {
 
 exports.watch = watch
 exports.style = style;
-const build = gulp.parallel(style, watch);
+exports.styleProd = styleProd;
 
-gulp.task('build', build);
-gulp.task('default', build);
+gulp.task('build', styleProd);
+gulp.task('default', gulp.parallel(style, watch));
