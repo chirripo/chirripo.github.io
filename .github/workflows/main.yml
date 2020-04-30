@@ -24,6 +24,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
           BRANCH: master
           FOLDER: build
