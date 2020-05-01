@@ -12,7 +12,7 @@
   }
   
   .highlight-chirripo p {
-    color: #7d8285;
+    color: #5c6165;
   }
   
   .highlight-chirripo h2 {
@@ -54,8 +54,10 @@
     line-height: 1;
   }
   
-  .highlight-chirripo .intro .btn:hover {
-    opacity: 1;
+  .highlight-chirripo .intro .btn {
+    &:hover, &:focus {
+      opacity: 1;
+    }
   }
   
   .highlight-chirripo .intro .btn:active {
@@ -63,7 +65,7 @@
   }
   
   .highlight-chirripo .intro .btn-primary {
-    background-color: #055ada;
+    background-color: #1E680F;
     color: #fff;
   }
   
@@ -86,7 +88,7 @@
     }
   }
   
-  .highlight-chirripo .chirripo-logo img.device {
+  .highlight-chirripo .chirripo-logo img.logo {
     width: 100%;
     height: auto;
   }

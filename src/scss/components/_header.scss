@@ -118,8 +118,11 @@
     outline: none;
   }
   
-  .header-green .action-button:hover {
-    color: #fff;
+  .header-green .action-button {
+    &:hover, &:focus {
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      color: #fff;
+    }
   }
   
   .header-green .navbar .form-inline label {
@@ -186,10 +189,6 @@
   .demo-wrapper .demo {
     width: 100%;
     vertical-align: middle;
-  }
-  
-  .btn.btn-primary {
-    background: #2C9915 !important;
   }
   
   .learn-more {
