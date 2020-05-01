@@ -1,4 +1,4 @@
-.highlight-phone {
+.highlight-chirripo {
     color: #313437;
     background-color: #FFF;
     padding: 50px 0 55px;
@@ -6,16 +6,16 @@
   }
   
   @media (max-width:767px) {
-    .highlight-phone {
+    .highlight-chirripo {
       text-align: center;
     }
   }
   
-  .highlight-phone p {
+  .highlight-chirripo p {
     color: #7d8285;
   }
   
-  .highlight-phone h2 {
+  .highlight-chirripo h2 {
     font-weight: bold;
     margin-bottom: 35px;
     line-height: 1.5;
@@ -24,23 +24,23 @@
     color: inherit;
   }
   
-  .highlight-phone .intro {
+  .highlight-chirripo .intro {
     font-size: 18px;
     max-width: 500px;
     line-height: 1.5;
   }
   
   @media (max-width:767px) {
-    .highlight-phone .intro {
+    .highlight-chirripo .intro {
       max-width: none;
     }
   }
   
-  .highlight-phone .intro p {
+  .highlight-chirripo .intro p {
     margin-bottom: 35px;
   }
   
-  .highlight-phone .intro .btn {
+  .highlight-chirripo .intro .btn {
     padding: 16px 32px;
     border: none;
     background: none;
@@ -54,33 +54,44 @@
     line-height: 1;
   }
   
-  .highlight-phone .intro .btn:hover {
+  .highlight-chirripo .intro .btn:hover {
     opacity: 1;
   }
   
-  .highlight-phone .intro .btn:active {
+  .highlight-chirripo .intro .btn:active {
     transform: translateY(1px);
   }
   
-  .highlight-phone .intro .btn-primary {
+  .highlight-chirripo .intro .btn-primary {
     background-color: #055ada;
     color: #fff;
   }
   
-  .highlight-phone .iphone-mockup {
-    position: relative;
+  .highlight-chirripo .highlight-logo-wrapper {
+    margin: 0 auto;
     max-width: 260px;
-    /*margin-top: -30px;*/
-    margin-bottom: -230px;
-    /*transform: rotate(-15deg);*/
+    order: 1;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      position: relative;
+      margin-bottom: -230px;
+      order: 2;
+    }
+  }
+
+  .highlight-chirripo .highlight-text-wrapper {
+    order: 2;
+    @include media-breakpoint-up(md) {
+      order: 1;
+    }
   }
   
-  .highlight-phone .iphone-mockup img.device {
+  .highlight-chirripo .chirripo-logo img.device {
     width: 100%;
     height: auto;
   }
   
-  .highlight-phone .iphone-mockup .screen {
+  .highlight-chirripo .chirripo-logo .screen {
     position: absolute;
     width: 88%;
     height: 77%;
@@ -95,7 +106,7 @@
     background-position: center;
   }
   
-  .highlight-phone .iphone-mockup .screen:before {
+  .highlight-chirripo .chirripo-logo .screen:before {
     content: '';
     background-color: #fff;
     position: absolute;
