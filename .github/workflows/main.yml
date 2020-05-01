@@ -20,6 +20,7 @@ jobs:
           cp -r assets build/
           cp index.html build/
           cp CNAME build/
+          rm .gitignore
 
       - name: Install SSH Client 🔑
         uses: webfactory/ssh-agent@v0.2.0
