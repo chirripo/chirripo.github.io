@@ -4,17 +4,15 @@
     padding: 50px 0 55px;
     overflow: hidden;
   }
-  
-  @media (max-width:767px) {
-    .highlight-chirripo {
-      text-align: center;
-    }
+
+  .highlight-chirripo {
+    text-align: center;
   }
-  
+
   .highlight-chirripo p {
     color: #5c6165;
   }
-  
+
   .highlight-chirripo h2 {
     font-weight: bold;
     margin-bottom: 35px;
@@ -23,23 +21,22 @@
     margin-top: 0;
     color: inherit;
   }
-  
+
   .highlight-chirripo .intro {
     font-size: 18px;
-    max-width: 500px;
     line-height: 1.5;
   }
-  
+
   @media (max-width:767px) {
     .highlight-chirripo .intro {
       max-width: none;
     }
   }
-  
+
   .highlight-chirripo .intro p {
     margin-bottom: 35px;
   }
-  
+
   .highlight-chirripo .intro .btn {
     padding: 16px 32px;
     border: none;
@@ -53,25 +50,24 @@
     letter-spacing: 0.4px;
     line-height: 1;
   }
-  
+
   .highlight-chirripo .intro .btn {
     &:hover, &:focus {
       opacity: 1;
     }
   }
-  
+
   .highlight-chirripo .intro .btn:active {
     transform: translateY(1px);
   }
-  
+
   .highlight-chirripo .intro .btn-primary {
     background-color: #1E680F;
     color: #fff;
   }
-  
+
   .highlight-chirripo .highlight-logo-wrapper {
     margin: 0 auto;
-    max-width: 260px;
     order: 1;
     margin-bottom: 20px;
     @include media-breakpoint-up(md) {
@@ -87,12 +83,12 @@
       order: 1;
     }
   }
-  
+
   .highlight-chirripo .chirripo-logo img.logo {
     width: 100%;
     height: auto;
   }
-  
+
   .highlight-chirripo .chirripo-logo .screen {
     position: absolute;
     width: 88%;
@@ -107,7 +103,7 @@
     background-size: cover;
     background-position: center;
   }
-  
+
   .highlight-chirripo .chirripo-logo .screen:before {
     content: '';
     background-color: #fff;
