@@ -19,7 +19,7 @@ jobs:
           mkdir build
           cp -r assets build/
           cp index.html build/
-          cp launch.html build/
+          cp -r launch build/
           cp CNAME build/
           cp favicon.ico build/
           rm .gitignore
