@@ -1,7 +1,7 @@
 .header-green {
     background: linear-gradient(135deg, #1D660E, #7AE565);
     background-color: #2C9915;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     font-family: 'Source Sans Pro', sans-serif;
 
     .logo {
@@ -36,12 +36,6 @@
         visibility: visible;
         transform: scaleX(1);
       }
-    }
-  }
-
-  @media (min-width:768px) {
-    .header-green {
-      padding-bottom: 120px;
     }
   }
 
